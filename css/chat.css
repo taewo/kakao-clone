@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+@import "reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 1000px;
+	font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Helvetica Neue", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.ko__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.ko__title span {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.ko__title span:nth-child(2) i {
+	margin-right: 10px;
+}
+
+.my {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.my .img {
+	background-image: url('http://image.cine21.com/resize/cine21/still/2018/1119/18_07_20__5bf27d4885955[X252,310].jpg');
+	width: 80px;
+	height: 80px;
+	background-size: cover;
+	border-radius: 40px;
+	margin-right: 10px;
+}
+
+.my .title {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.my .status {
+	font-weight: 300;
+	font-size: 11px;
+}
+
+.plus-friends {
+	border-top: 1px solid #f7f7f7;
+	border-bottom: 1px solid #f7f7f7;
+	padding: 10px 20px;
+}
+
+.plus-friends .title {
+	font-weight: 300;
+}
+
+.small-friend {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 10px;
+	position: relative;
+}
+
+.small-friend .music {
+	position: absolute;
+	right: 10px;
+	border: 2px solid #62fa16;
+	padding: 3px 12px;
+	border-radius: 30px;
+}
+
+.small-friend .img {
+	background-image: url('https://en.as.com/en/imagenes/2019/12/11/football/1576102825_947330_noticia_normal.jpg');
+	background-position: -10px;
+	width: 60px;
+	height: 60px;
+	background-size: cover;
+	border-radius: 40px;
+	margin-right: 10px;
+}
+
+.main .grid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 16px;
+}
+
+.main .date {
+	text-align: center;
+	background-color: white;
+	display: inline-block;
+	width: 170px;
+	border-radius: 17px;
+}
+
+.main .grids {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.main .grids .left,
+.right {
+	width: 50%;
+}
+
+.left .talk {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+@keyframes spin {
+	from {
+		transform: none;
+	}
+	to {
+		transform: rotateY(1turn);
+	}
+}
+
+.left .avartar {
+	animation: spin 1s linear infinite;
+	background-image: url('http://images.christiandaily.co.kr/data/images/full/35105/photo-photo.jpg?w=600');
+	background-size: cover;
+	width: 50px;
+	border-radius: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.left .text {
+	display: inline-block;
+	padding-bottom: 10px;
+	padding-left: 7px;
+}
+
+.left .text span {
+	padding: 7px;
+	border-radius: 20px 20px 20px 0;
+	background-image: linear-gradient(to right, #7b4397, #dc2430);
+	color: white;
+}
+
+.right {
+	/* display: flex;
+	align-items: flex-start; */
+}
+
+.right .talk {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 200px;
+	margin-bottom: 100px;
+}
+
+.right .talk {
+	padding: 7px;
+	border-radius: 20px 20px 0px 20px;
+	color: white;
+	background-image: linear-gradient(to left, #00c6ff, #0072ff);
+}
+
+.normal-friends {
+	padding: 10px 20px;
+}
+
+.normal-friends .title {
+	font-weight: 300;
+}
+
+.small-friend .title {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.small-friend .status {
+	font-weight: 300;
+	font-size: 11px;
+}
+
+.small-friend:nth-child(2) .img {
+	background-image: url('https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2019%2F11%2Fson-heungmin-tottenham-hotspur-most-goal-korean-football-player-1.jpg?q=75&w=800&cbr=1&fit=max');
+	background-position: -15px;
+}
+
+.small-friend:nth-child(3) .img {
+	background-image: url('http://images.christiandaily.co.kr/data/images/full/35105/photo-photo.jpg?w=600');
+}
+
+.small-friend:nth-child(4) .img {
+	background-image: url('https://i.guim.co.uk/img/static/sys-images/Football/Pix/pictures/2009/2/27/1235771746218/Park-Ji-sung-001.jpg?width=300&quality=85&auto=format&fit=max&s=b32ca68e1b206b26262de549cb00c19c');
+	background-position: -13px 5px;
+}
+
+.main {
+	background-image: url(../images/chatBg.png);
+	height: 1000px;
+	overflow: hidden;
+}
+
+@keyframes main-slidein {
+	from {
+		opacity: 0;
+		height: 0px;
+	}
+	to {
+		opacity: 1;
+		height: 454px;
+	}
+}
+
+.bottom {
+	bottom: 0;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: #f7f7f7;
+	animation-name: bottom-slidein;
+	animation-duration: 1.6s;
+}
+
+.bottom a:nth-child(2) {
+	position: relative;
+}
+
+.bottom .count {
+	position: absolute;
+	top: -10px;
+	left: 9px;
+	font-size: 8px;
+	padding: 3px;
+	color: white;
+	border-radius: 20px;
+	background-color: red;
+}
+
+@keyframes bottom-slidein {
+	from {
+		height: 0px;
+	}
+	to {
+		height: 50px;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	.small-screen {
+		display: none;
+	}
+
+	body {
+		background-color: orange;
+	}
+
+	.big-screen {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.big-screen {
+		display: none;
+	}
+}
