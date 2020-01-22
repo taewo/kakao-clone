@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+@import "reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 1000px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.ko__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.ko__title span {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.ko__title span:nth-child(2) i {
+	margin-right: 10px;
+}
+
+.my {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.my .img {
+	background-image: url('http://image.cine21.com/resize/cine21/still/2018/1119/18_07_20__5bf27d4885955[X252,310].jpg');
+	width: 80px;
+	height: 80px;
+	background-size: cover;
+	border-radius: 40px;
+	margin-right: 10px;
+}
+
+.my .title {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.my .status {
+	font-weight: 300;
+	font-size: 11px;
+}
+
+.plus-friends {
+	border-top: 1px solid #f7f7f7;
+	border-bottom: 1px solid #f7f7f7;
+	padding: 10px 20px;
+}
+
+.plus-friends .title {
+	font-weight: 300;
+}
+
+.small-friend {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 10px;
+	position: relative;
+}
+
+.small-friend .music {
+	position: absolute;
+	right: 10px;
+	border: 2px solid #62fa16;
+	padding: 3px 12px;
+	border-radius: 30px;
+}
+
+.small-friend .img {
+	background-image: url('http://image.cine21.com/resize/cine21/still/2018/1119/18_07_20__5bf27d4885955[X252,310].jpg');
+	width: 60px;
+	height: 60px;
+	background-size: cover;
+	border-radius: 40px;
+	margin-right: 10px;
+}
+
+.normal-friends {
+	padding: 10px 20px;
+}
+
+.normal-friends .title {
+	font-weight: 300;
+}
+
+.small-friend .title {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.small-friend .status {
+	font-weight: 300;
+	font-size: 11px;
+}
+
+.small-friend:nth-child(2) .img {
+	background-image: url('https://en.as.com/en/imagenes/2019/12/11/football/1576102825_947330_noticia_normal.jpg');
+	background-position: -15px;
+}
+
+.small-friend:nth-child(3) .img {
+	background-image: url('http://images.christiandaily.co.kr/data/images/full/35105/photo-photo.jpg?w=600');
+}
+
+.small-friend:nth-child(4) .img {
+	background-image: url('https://i.guim.co.uk/img/static/sys-images/Football/Pix/pictures/2009/2/27/1235771746218/Park-Ji-sung-001.jpg?width=300&quality=85&auto=format&fit=max&s=b32ca68e1b206b26262de549cb00c19c');
+	background-position: -13px 5px;
+}
+
+.main {
+	animation-name: main-slidein;
+	animation-duration: 1.2s;
+	overflow: hidden;
+}
+
+@keyframes main-slidein {
+	from {
+		opacity: 0;
+		height: 0px;
+	}
+	to {
+		opacity: 1;
+		height: 454px;
+	}
+}
+
+.bottom {
+	bottom: 0;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background-color: #f7f7f7;
+	animation-name: bottom-slidein;
+	animation-duration: 1.6s;
+}
+
+@keyframes bottom-slidein {
+	from {
+		height: 0px;
+	}
+	to {
+		height: 50px;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	.small-screen {
+		display: none;
+	}
+
+	body {
+		background-color: orange;
+	}
+
+	.big-screen {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.big-screen {
+		display: none;
+	}
+}
