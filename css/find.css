@@ -84,26 +84,21 @@ a {
 }
 
 .small-friend .music {
+	background-color: #f7f7f7;
 	position: absolute;
 	right: 10px;
-	border: 2px solid #62fa16;
-	padding: 3px 12px;
-	border-radius: 30px;
+	/* border: 2px solid #62fa16; */
+	padding: 10px 12px;
+	/* border-radius: 30px; */
 }
 
 .small-friend .img {
-	background-image: url('https://en.as.com/en/imagenes/2019/12/11/football/1576102825_947330_noticia_normal.jpg');
-	background-position: -10px;
+	background-image: url('http://image.cine21.com/resize/cine21/still/2018/1119/18_07_20__5bf27d4885955[X252,310].jpg');
 	width: 60px;
 	height: 60px;
 	background-size: cover;
 	border-radius: 40px;
 	margin-right: 10px;
-}
-
-.main .date {
-	position: absolute;
-	right: 10px;
 }
 
 .normal-friends {
@@ -144,6 +139,19 @@ a {
 	overflow: hidden;
 }
 
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.buttons i {
+	margin-bottom: 13px;
+}
+
 @keyframes main-slidein {
 	from {
 		opacity: 0;
@@ -166,21 +174,6 @@ a {
 	background-color: #f7f7f7;
 	animation-name: bottom-slidein;
 	animation-duration: 1.6s;
-}
-
-.bottom a:nth-child(2) {
-	position: relative;
-}
-
-.bottom .count {
-	position: absolute;
-	top: -10px;
-	left: 9px;
-	font-size: 8px;
-	padding: 3px;
-	color: white;
-	border-radius: 20px;
-	background-color: red;
 }
 
 @keyframes bottom-slidein {
